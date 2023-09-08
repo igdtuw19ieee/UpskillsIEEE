@@ -141,11 +141,15 @@ header {
   border-color:red;
 
 }
+#new{
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
 
 
 
 .title-screen h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   
   font-family: 'Libre Baskerville', serif;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
