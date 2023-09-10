@@ -14,68 +14,41 @@ html, body, ul, li, p {
   }
   
   /* Header */
-  header {
-    height: 80px;
+  #main-navbar{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background-color: black;
-    color: #fff;
-    padding: 0px 20px;
+    background-color: #000000;
+    padding: 0px 10px;
   }
-  
-  /* .title-bar {
-    width: 30%;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .logo {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: #fff;
-  } */
-  
-  /* Social Media Icons */
-  .social-icons {
-    display: flex;
-  }
-  
-  .social-icon {
-    font-size: 1.5rem;
-    margin-right: 10px;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Navigation */
-  .navbar{
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-  }
-  
-  .navbar ul {
+
+ #main-navbar ul{
     list-style: none;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    width: 500px;
   }
   
-  .navbar li {
-    margin: 0 30px;
-    text-align: right;
+  #main-navbar li{
+    list-style: none;
+    display: flex;
+    height: 50px;
+  }
+  
+  #main-navbar li a{
     position: relative;
-    padding: 20px;
-    padding-top: 2.5rem;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 10px;
+    font-weight: 100;
+    display: block;
     overflow: hidden;
-  }
-  .navbar li:hover{
-    cursor: pointer;
+    font-size: 24px;
   }
   
-  .navbar li::after {
+  #main-navbar a::after {
     content: '';
     background-color: #fff;
     width: 100%;
@@ -87,8 +60,12 @@ html, body, ul, li, p {
     animation: on-mouseout-animate 100ms linear 1 forwards;
   }
   
-  .navbar li:hover::after{
+  #main-navbar a:hover::after{
     animation: on-mouseover-animate 100ms linear 1 forwards;
+  }
+
+  .hamburger{
+    display: none;
   }
   
   @keyframes on-mouseover-animate {
@@ -108,39 +85,31 @@ html, body, ul, li, p {
       transform: translateY(3px);
     }
   }
-  
-  .navbar a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-  }
-  
-  
-  /* .ieee-logo{
-    width: 20%;
-  } */
-  
-  .ieee-logo a{
+
+  .ieee-logo{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
-  
+
+  .ieee-yp-logo{
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .ieee-logo img{
-    max-height: 80px;
     filter: invert(100%);
-    width: 100px;
+    display: inline-block;
+    height: 80px;
+    width: auto;
   }
-  
+
   .ieee-yp-logo img{
     filter: invert(100%);
-    width: 200px;
-    max-height: 100px;
-    margin-right: 0px;
-    object-fit: cover;
-    border:2px;
-    border-color:red;
-  
+    display: inline-block;
+    height: 80px;
+    width: auto;
   }
+
   #new{
     font-size: 2rem;
     padding-bottom: 20px;
@@ -149,7 +118,7 @@ html, body, ul, li, p {
   
   
   .title-screen h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     
     font-family: 'Libre Baskerville', serif;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -260,7 +229,7 @@ html, body, ul, li, p {
     background-color: rgb(12,29,57);
   }
   .font_6{
-  font-size:16px;
+  font-size:15px;
   color:aqua;
   font-size:large;
   }
@@ -277,7 +246,7 @@ html, body, ul, li, p {
   
   .image {
     width: 525px;
-    height: 250px; 
+    height: 250px; ;
     overflow: hidden;
     
     
@@ -288,43 +257,6 @@ html, body, ul, li, p {
     height: 100%;
     object-fit: cover;
   }
-/* Media Query for Small Screens */
-@media (max-width: 1300px) {
-  .text, .font_6, .font_2 {
-    line-height: 1.2em;
-  }
-
-  .image {
-    width: auto;
-    max-width: 1200px;
-    max-height: 250px; 
-  }
- 
-}
-@media (max-width: 800px) {
-  .text, .font_6, .font_2 {
-      line-height: 1.2em;
-      padding: 10px;
-  }
-
-  .image {
-    width: auto;
-    max-width: 768px;
-    max-height: 300px; 
-}
-}
-@media (max-width: 480px) {
-  .text, .font_6, .font_2 {
-    line-height: 1.2em;
-  }
-
-  .image {
-    width: auto;
-    max-width: 480px;
-    height: auto; 
-    max-height: 250px; 
-  }
-}
   
   
   
@@ -439,7 +371,7 @@ html, body, ul, li, p {
   }
   
   
-  a{
+  /* a{
     color:rgb(255, 255, 255);
     text-decoration:none;
     font-family: "Source Sans Pro", sans-serif;
@@ -465,7 +397,7 @@ html, body, ul, li, p {
     background: #000080;
     transform: rotateX(90deg) translate3d(0, 0, 30px);
     -webkit-transform: rotateX(90deg) translate3d(0, 0, 30px);
-  }
+  } */
   
   #bodyregister {
     background: rgb(10, 3, 47);
@@ -673,3 +605,75 @@ html, body, ul, li, p {
     flex: 0 0 20px;
   text-align: center;
   }
+
+  @media (max-width: 992px) {
+    .ieee-yp-logo{
+      display: none;
+    }
+  }
+
+
+  @media (max-width: 670px) {
+
+    #main-navbar{
+      position: relative;
+      z-index: 0;
+    }
+    #main-navbar ul{
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      width: 100%;
+      left: 0px;
+      top: 80px;
+      background-color: #000000;
+      transform: translateY(-100%);
+      transition: transform 0.8s, opacity 0.8s;
+      opacity: 0%;
+      z-index: -2;
+    }
+
+    #main-navbar li{
+     margin: 10px 0px;
+    }
+    #main-navbar ul.activated{
+      transform: translateY(0%);
+      opacity: 100%;
+  }
+
+    #main-navbar a::after {
+      display: none;
+    }
+
+    .hamburger{
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      padding: 15px 15px;
+      justify-content: center;
+      align-items: center;
+      
+  }
+  .bar{
+      display: block;
+      background-color: white;
+      width: 25px;
+      height: 3px;
+      margin: 5px;
+      transition: all 0.3s ease-in-out;
+  }   
+ 
+  
+  .hamburger.activated .bar:nth-child(2){
+      opacity: 0%;
+  }
+
+  .hamburger.activated .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+      
+  }
+  .hamburger.activated .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+ 
+  }
+}
