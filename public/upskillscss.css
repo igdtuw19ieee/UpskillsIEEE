@@ -260,7 +260,7 @@ html, body, ul, li, p {
     background-color: rgb(12,29,57);
   }
   .font_6{
-  font-size:15px;
+  font-size:16px;
   color:aqua;
   font-size:large;
   }
@@ -277,7 +277,7 @@ html, body, ul, li, p {
   
   .image {
     width: 525px;
-    height: 250px; ;
+    height: 250px; 
     overflow: hidden;
     
     
@@ -288,6 +288,43 @@ html, body, ul, li, p {
     height: 100%;
     object-fit: cover;
   }
+/* Media Query for Small Screens */
+@media (max-width: 1300px) {
+  .text, .font_6, .font_2 {
+    line-height: 1.2em;
+  }
+
+  .image {
+    width: auto;
+    max-width: 1200px;
+    max-height: 250px; 
+  }
+ 
+}
+@media (max-width: 800px) {
+  .text, .font_6, .font_2 {
+      line-height: 1.2em;
+      padding: 10px;
+  }
+
+  .image {
+    width: auto;
+    max-width: 768px;
+    max-height: 300px; 
+}
+}
+@media (max-width: 480px) {
+  .text, .font_6, .font_2 {
+    line-height: 1.2em;
+  }
+
+  .image {
+    width: auto;
+    max-width: 480px;
+    height: auto; 
+    max-height: 250px; 
+  }
+}
   
   
   
