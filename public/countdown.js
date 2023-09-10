@@ -22,3 +22,11 @@ function updateCountdown() {
         document.querySelector('#seconds').innerText = getDigits(sec);
     }
 }
+
+const navBar = document.querySelector('#main-navbar ul');
+const hamburger = document.querySelector('.hamburger');
+console.log(hamburger)
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('activated');
+    navBar.classList.toggle('activated');
+})
