@@ -490,36 +490,7 @@ html, body, ul, li, p {
     padding: 30px;
   }
   
-  
-  
-  /*COMING SOON*/
-  
-  .coming-soon-container {
-    text-align: center; /* Center the content within the container */
-    margin-top: 20px; /* Add margin for spacing */
-    background-color: rgb(12,29,57);  /* Set background color for the container */
-    padding: 10px; /* Add padding to the container */
-    animation: fadeInAndScale 2s infinite alternate; /* Continuous animation */
-    font-size: 2px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-  }
-  
-  @keyframes fadeInAndScale {
-    0% {
-        opacity: 0.6; 
-        transform: scale(0.9);
-    }
-    100% {
-        opacity: 1; 
-        transform: scale(1);
-    }
-  }
-  
-  .coming-soon-text {
-    font-size: 3em;
-  }
-  
-  
+
    
   
   /*EVENT SCHEDULE*/
@@ -528,7 +499,7 @@ html, body, ul, li, p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100px;
     column-width: 980px;
   }
   
