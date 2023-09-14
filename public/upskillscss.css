@@ -230,7 +230,7 @@ html, body, ul, li, p {
   
   .image {
     width: auto;
-    height: 1000px; 
+    height: auto; 
     overflow: hidden;
     
     
