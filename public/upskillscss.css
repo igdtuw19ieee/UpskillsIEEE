@@ -924,6 +924,20 @@ h1 {
   }
 }
 
+@media (max-width:485px){
+ 
+
+  .title-screen h1{
+    font-size: 18px;
+  }
+  figure{
+    width: 320px;
+  }
+  #registerh1{
+    font-size: 1rem;
+  }
+}
+
 /* Additional media queries for smaller screen sizes if needed */
 @media screen and (max-width: 576px) {
   .title-screen h1 {
