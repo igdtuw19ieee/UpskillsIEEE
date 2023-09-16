@@ -823,7 +823,7 @@ h1 {
  */
 
  /* Add a media query for screens with a maximum width of 768px */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   #special {
     background-position: center top;
   }
@@ -865,7 +865,141 @@ h1 {
   .hamburger.activated .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+ */
 
+  @media screen and (max-width: 768px) {
+
+    .title-screen h1{
+    font-size: 1.2em;
+  }
+
+    #bodyregister{
+      width: auto;
+    }
+    
+
+    .event-block{
+      
+      display: flex;
+      justify-content: center;
+
+    }
+    #span2{
+      width: 60%;
+    }
+    #span3{
+      width: 60%;
+    }
+
+    .navbar {
+      width: 100%;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar li {
+      margin: 10px 0;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .ieee-yp-logo{
+      display: none;
+    }
+  }
+
+
+  @media (max-width: 670px) {
+
+    #main-navbar{
+      position: relative;
+      z-index: 0;
+    }
+    #main-navbar ul{
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      width: 100%;
+      left: 0px;
+      top: 80px;
+      background-color: #000000;
+      transform: translateY(-100%);
+      transition: transform 0.8s, opacity 0.8s;
+      opacity: 0%;
+      z-index: -2;
+    }
+
+    #main-navbar li{
+     margin: 10px 0px;
+    }
+    #main-navbar ul.activated{
+      transform: translateY(0%);
+      opacity: 100%;
+  }
+
+    #main-navbar a::after {
+      display: none;
+    }
+
+    .hamburger{
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      padding: 15px 15px;
+      justify-content: center;
+      align-items: center;
+      
+  }
+  .bar{
+      display: block;
+      background-color: white;
+      width: 25px;
+      height: 3px;
+      margin: 5px;
+      transition: all 0.3s ease-in-out;
+  }   
+ 
+  
+  .hamburger.activated .bar:nth-child(2){
+      opacity: 0%;
+  }
+
+  .hamburger.activated .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+      
+  }
+  .hamburger.activated .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+ 
+  }
+}
+
+@media (max-width:426px){
+  #span2{
+    display: flex;
+    justify-content: center;
+  }
+  #span3{
+    display: flex;
+    justify-content: center;
+  }
+
+  .title-screen h1{
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width:376px){
+  .title-screen h1{
+    font-size: 0.6em;
+  }
+  #upskill-bold{
+    font-size: 3.3rem;
+  }
+}
   #social-icons {
     top: auto;
     bottom: 20px;
