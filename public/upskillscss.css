@@ -482,35 +482,135 @@ html, body, ul, li, p {
   
   /*EVENT SECTION*/
   
-#bodyevent {
+  #bodyEvent {
+    background-color: rgb(12,29,57); 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin-top: 0px; 
+    /* Changes being made below here*/
+    padding: 20px;
+   
+}
+
+.containerEvent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180vh;
+    column-width: 980px;
+}
+
+.schedule {
+    background-color: rgb(12,29,57);
+    border-radius: 10px;
+    padding: 60px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 1020px; 
+    max-height: fit-content;
+    /* Changes */
+    margin-bottom: 20px;
+     /* height: 400px; You can adjust the height as needed */
+     height: 1000px;
+     overflow-y: scroll;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 20px;
+    /* border-left: 5px solid rgba(201,209,222);  */
+    position: relative;
+    /* changes */
+    border-left: none;
+    text-align: center;
+    /* background-color: #f9f9f9; */
+}
+
+.event-time {
+    /* width: 50%; */
+    text-align: center;
+    font-weight: bold;
+    color: #fff; 
+    /* changes */
+  width: 100%;
+}
+.event-name {
+    /* width: 80%; */
+    /* padding-left: 20px; */
+    /* changes */
+    width: 100%;
+    text-align: center;
+}
+
+.divider {
+    margin-top: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: rgba(201,209,222); 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.event:hover {
+    background-color: #2c3e50;
+    transition: background-color 0.3s ease;
+}
+
+.event:before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color:#8ee3f1; 
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.event:hover:before {
+    opacity: 1;
+}
+
+.separator{
+    flex: 0 0 20px;
+  text-align: center;
+}
+
+
+/*  #bodyevent {
     background-color: rgb(12,29,57); 
     color: #fff;
     font-size: 8rem;
     font-family: 'Libre Baskerville', serif;
     padding: 30px;
   }
+  
 
-
-
-
-  /EVENT SCHEDULE/
-
-  #containerevent {
+   
+  
+  /*EVENT SCHEDULE*/
+  
+/*  #containerevent {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
     column-width: 980px;
   }
-
-
-
-
+  
+  
+  
+  
   .schedule {
     background-color: rgb(12,29,57);
     border-radius: 10px;
     padding: 20px;
-
+    
     width: 100%;
     max-width: 1020px; 
     max-height: 1000px;
@@ -534,7 +634,7 @@ html, body, ul, li, p {
   .event-name {
     width: 80%;
     /* padding-left: 20px; */
-  }
+/*  }
   
   .divider {
     margin-top: 25px;
@@ -556,7 +656,9 @@ html, body, ul, li, p {
     content: '';
     position: absolute;
     left: -2px;
-	@@ -562,16 +553,16 @@ html, body, ul, li, p {
+    top: 0;
+    height: 100%;
+    width: 2px;
     background-color:#8ee3f1; 
     opacity: 0; 
     transition: opacity 0.3s ease;
@@ -568,10 +670,11 @@ html, body, ul, li, p {
   
   .separator{
     flex: 0 0 20px;
-  text-align: center;
-  }
+  text-align: center;
+  }
+
   /* Media Query for responsive design */
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
 
     .title-screen h1{
     font-size: 1.2em;
@@ -717,3 +820,223 @@ html, body, ul, li, p {
     font-size: 3.3rem;
   }
 }
+ */
+
+ /* Add a media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  #special {
+    background-position: center top;
+  }
+
+  #main-navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .ieee-logo, .ieee-yp-logo {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-option {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .hamburger.activated .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.activated .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.activated .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  #social-icons {
+    top: auto;
+    bottom: 20px;
+    right: 20px;
+    flex-direction: row;
+  }
+  .fab {
+    margin-right: 10px;
+  }
+
+  .title-screen h1 {
+    font-size: 1.2rem;
+  }
+
+  #bodyregister {
+    width: 100%;
+  }
+  
+  #span2, #span3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  #bodyEvent {
+    height: auto;
+  }
+
+  .schedule {
+    /* padding: 20px;*/
+    /* changes */ 
+    padding: 10px;
+  }
+
+  .event {
+    flex-direction: column;
+    margin-bottom: 15px;
+    /* padding: 20px; */
+    border-left: none;
+    text-align: center;
+    padding : 10px;
+  }
+  .event-time, .event-name {
+    width: 100%;
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Additional media queries for smaller screen sizes if needed */
+@media screen and (max-width: 576px) {
+  .title-screen h1 {
+    font-size: 1rem;
+  }
+
+  .event-name {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+/* Srishti....speaker section*/
+
+#bodyspeakers{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter ,sans sans-serif;
+}
+
+#bodyspeakers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #100034;
+}
+#headingfff{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#srish{
+    color: #fff;
+    font-size: 4rem;
+    
+}
+
+
+
+.wrapper500{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.card500{
+    position: relative;
+    width: 325px;
+    height: 450px;
+    background: #000;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.poster500{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.poster500::before{
+    content: '';
+    position: absolute;
+    bottom: -45%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.details500{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 1.5em 1.5em 2em;
+    background: #000a;
+    backdrop-filter: blur(16px) saturate(120%);
+    transition: .3s;
+    color: #fff;
+    z-index: 2;
+}
+
+.card500:hover .details500{
+    bottom: 0;
+}
+
+.details500 h1{
+font-weight: 700;
+font-size: 1.5em;
+margin-bottom: 5px;
+}
+
+.details500 h2{
+font-weight: 400;
+font-size: 1em;
+margin-bottom: 10px;
+opacity: .6;
+
+}
+
