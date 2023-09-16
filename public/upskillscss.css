@@ -924,6 +924,19 @@ h1 {
   }
 }
 
+
+
+/* Additional media queries for smaller screen sizes if needed */
+@media screen and (max-width: 576px) {
+  .title-screen h1 {
+    font-size: 1rem;
+  }
+
+  .event-name {
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width:485px){
  
 
@@ -937,19 +950,6 @@ h1 {
     font-size: 1rem;
   }
 }
-
-/* Additional media queries for smaller screen sizes if needed */
-@media screen and (max-width: 576px) {
-  .title-screen h1 {
-    font-size: 1rem;
-  }
-
-  .event-name {
-    font-size: 0.9rem;
-  }
-}
-
-
 
 
 
